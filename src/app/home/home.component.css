@@ -1,0 +1,11 @@
+.info-text {
+  max-width: 30%;
+  margin: 10rem 0;
+}
+
+@media only screen and (max-width: 900px) {
+  .info-text {
+    max-width: 80%;
+  }
+}
+/*# sourceMappingURL=home.component.css.map */
