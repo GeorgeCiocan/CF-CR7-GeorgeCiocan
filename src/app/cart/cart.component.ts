@@ -19,7 +19,6 @@ export class CartComponent implements OnInit {
   ngOnChanges() {
     this.bookedLocationsArray = this.cartLogic.getcartArray()
     this.priceSum = this.cartLogic.getPriceSum()
-    console.log(this.cartLogic.getPriceSum())
   }
 
   emptyCart() {

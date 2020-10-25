@@ -1,1 +1,14 @@
-<p>location works!</p>
+<div class="card text-center">
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-body offset-1 col-10">
+    <h5 class="card-title">{{ location.destination }}</h5>
+    <p class="card-text">{{ location.description }}</p>
+    <p class="card-text">Duration: {{ location.duration }}</p>
+    <button type="button" class="btn btn-outline-primary" (click)="bookTrip(location)">Book now for only {{ location.price }} Euro!</button>
+  </div>
+  <div class="card-footer text-muted">
+    Starts on {{ location.startDate }}
+  </div>
+</div>
