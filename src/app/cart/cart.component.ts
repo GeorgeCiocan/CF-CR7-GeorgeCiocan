@@ -25,7 +25,8 @@ export class CartComponent implements OnInit {
     this.bookedLocationsArray = this.cartLogic.clearCart()
   }
 
-  removeTrip() {
-    //to do
+  removeTrip(location: {}) {
+    this.bookedLocationsArray = this.cartLogic.removeFromCart(location)
+    this.priceSum = this.cartLogic.getPriceSum()
   }
 }
